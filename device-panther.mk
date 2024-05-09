@@ -78,6 +78,34 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += vendor.display.lbe.supported=1
 #config of primary display frames to reach LHBM peak brightness
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += vendor.primarydisplay.lhbm.frames_to_reach_peak_brightness=2
 
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/app/AboutBliss/AboutBliss.apk \
+    system/app/Covers/Covers.apk \
+    system/app/Gramophone/Gramophone.apk \
+    system/app/WeatherIcons/WeatherIcons.apk \
+    system/etc/init/smartcharge-init.rc \
+    system/etc/permissions/android.hardware.biometrics.face.xml \
+    system/etc/permissions/org.lineageos.audio.xml \
+    system/etc/permissions/org.lineageos.hardware.xml \
+    system/etc/permissions/org.lineageos.livedisplay.xml \
+    system/etc/permissions/org.lineageos.performance.xml \
+    system/etc/permissions/org.lineageos.profiles.xml \
+    system/etc/permissions/org.lineageos.settings.xml \
+    system/etc/permissions/org.lineageos.trust.xml \
+    system/etc/permissions/privapp-permissions-google.xml \
+    system/etc/sensitive_pn.xml \
+    system/fonts/RobotoFallback-VF.ttf \
+    system/media/bootanimation.zip \
+    system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk \
+    system/etc/default-permissions/default_permissions_co.aospa.sense.xml \
+    system/etc/permissions/privapp_whitelist_co.aospa.sense.xml \
+    system/etc/sysconfig/hiddenapi-whitelist-co.aospa.sense.xml \
+    system/lib64/libFaceDetectCA.so \
+    system/lib64/libMegviiUnlock-jni-1.2.so \
+    system/lib64/libMegviiUnlock.so \
+    system/lib64/libmegface.so \
+    system/priv-app/ParanoidSense/ParanoidSense.apk
+
 # NFC
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
