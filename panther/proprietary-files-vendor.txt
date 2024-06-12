@@ -15,6 +15,7 @@ vendor/bin/hw/android.hardware.authsecret-service.citadel
 vendor/bin/hw/android.hardware.biometrics.fingerprint-service.goodix
 vendor/bin/hw/android.hardware.bluetooth-service.bcmbtlinux
 vendor/bin/hw/android.hardware.confirmationui-service.trusty.vendor
+vendor/bin/hw/android.hardware.contexthub-service.generic
 vendor/bin/hw/android.hardware.edgetpu.logging@service-edgetpu-logging
 vendor/bin/hw/android.hardware.gnss@2.1-service-brcm
 vendor/bin/hw/android.hardware.gxp.logging@service-gxp-logging
@@ -25,6 +26,7 @@ vendor/bin/hw/android.hardware.oemlock-service.citadel
 vendor/bin/hw/android.hardware.secure_element@1.2-uicc-service
 vendor/bin/hw/android.hardware.security.keymint-service.citadel
 vendor/bin/hw/android.hardware.weaver-service.citadel
+vendor/bin/hw/battery_mitigation
 vendor/bin/hw/citadel_updater
 vendor/bin/hw/citadeld
 vendor/bin/hw/com.google.edgetpu.dba-service
@@ -178,6 +180,7 @@ vendor/etc/init/android.hardware.authsecret-service.citadel.rc
 vendor/etc/init/android.hardware.bluetooth-service.bcmbtlinux.rc
 vendor/etc/init/android.hardware.camera.provider@2.7-service-google-apex.rc
 vendor/etc/init/android.hardware.confirmationui-service.trusty.vendor.rc
+vendor/etc/init/android.hardware.contexthub-service.generic.rc
 vendor/etc/init/android.hardware.edgetpu.logging@service-edgetpu-logging.rc
 vendor/etc/init/android.hardware.gxp.logging@service-gxp-logging.rc
 vendor/etc/init/android.hardware.identity@1.0-service.citadel.rc
@@ -252,6 +255,7 @@ vendor/etc/twoshay_config.json
 vendor/etc/vintf/manifest/android.hardware.authsecret-service.citadel.xml
 vendor/etc/vintf/manifest/android.hardware.camera.provider@2.7-service-google-apex.xml
 vendor/etc/vintf/manifest/android.hardware.confirmationui-service.trusty.vendor.xml
+vendor/etc/vintf/manifest/android.hardware.contexthub-service.generic.xml
 vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-brcm.xml
 vendor/etc/vintf/manifest/android.hardware.identity.strongbox.xml
 vendor/etc/vintf/manifest/android.hardware.neuralnetworks@service-darwinn-aidl.xml
@@ -1489,9 +1493,6 @@ vendor/lib/libamcsextfile.so
 vendor/lib/libaoc.so
 vendor/lib/libaoctuningdecoder.so
 vendor/lib/libaocx.so
-vendor/lib/libaudioutils.so
-vendor/lib/libbase.so
-vendor/lib/libbinder.so
 vendor/lib/libbo_av1.so
 vendor/lib/libc++.so
 vendor/lib/libc2filterplugin.so
@@ -1671,9 +1672,6 @@ vendor/lib64/libamcsextfile.so
 vendor/lib64/libaoc.so
 vendor/lib64/libaoctuningdecoder.so
 vendor/lib64/libaocx.so
-vendor/lib64/libaudioutils.so
-vendor/lib64/libbase.so
-vendor/lib64/libbinder.so
 vendor/lib64/libbo_av1.so
 vendor/lib64/libc++.so
 vendor/lib64/libc2filterplugin.so
