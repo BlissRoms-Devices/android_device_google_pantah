@@ -26,6 +26,9 @@ TARGET_SCREEN_HEIGHT := 3120
 TARGET_SCREEN_WIDTH := 1440
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Gapps
+TARGET_STOCK_GAPPS := true
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="cheetah-user 15 BP1A.250505.005.B1 13277630 release-keys" \
     BuildFingerprint=google/cheetah/cheetah:15/BP1A.250505.005.B1/13277630:user/release-keys \
