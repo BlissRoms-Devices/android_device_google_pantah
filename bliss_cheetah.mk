@@ -33,8 +33,8 @@ TARGET_STOCK_GAPPS := true
 EXTRA_UDFPS_ANIMATIONS := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="cheetah-user 15 AP3A.241105.007 12470370 release-keys" \
-    BuildFingerprint=google/cheetah/cheetah:15/AP3A.241105.007/12470370:user/release-keys \
+    BuildDesc="cheetah-user 15 AP4A.250105.002 12701944 release-keys" \
+    BuildFingerprint=google/cheetah/cheetah:15/AP4A.250105.002/12701944:user/release-keys \
     DeviceProduct=$(DEVICE_CODENAME)
 
 $(call inherit-product, $(VENDOR_PATH)/$(DEVICE_CODENAME)-vendor.mk)
