@@ -23,6 +23,9 @@ TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 TARGET_BOOT_ANIMATION_RES := $(TARGET_SCREEN_WIDTH)
 
+# Gapps
+TARGET_GAPPS_VARIANT := micro
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="panther-user 16 BP4A.251205.006 14401865 release-keys" \
     BuildFingerprint=google/panther/panther:16/BP4A.251205.006/14401865:user/release-keys \
