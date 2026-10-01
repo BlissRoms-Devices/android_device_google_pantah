@@ -18,8 +18,8 @@ jobs:
     uses: BlissRoms/upstream-sync/.github/workflows/sync.yml@main
     with:
       upstream_repo: LineageOS/android_device_google_pantah
-      upstream_branch: lineage-23.2
-      target_branch: waterlily-qpr2
+      upstream_branch: lineage-24.0
+      target_branch: xylobium
     secrets:
       BOT_NAME: ${{ secrets.BOT_NAME }}
       BOT_EMAIL: ${{ secrets.BOT_EMAIL }}
