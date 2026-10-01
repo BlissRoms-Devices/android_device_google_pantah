@@ -24,6 +24,9 @@ TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 TARGET_BOOT_ANIMATION_RES := $(TARGET_SCREEN_WIDTH)
 
+# Gapps
+GAPPS_ARCH := arm64
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="panther-user 17 CP2A.260705.006 15641320 release-keys" \
     BuildFingerprint=google/panther/panther:17/CP2A.260705.006/15641320:user/release-keys \
