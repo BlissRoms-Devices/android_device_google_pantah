@@ -87,6 +87,10 @@ def fix_vendor_file_list(file_list: FileList):
     for file_path in disable_checkelf_file_paths:
         file_list.get_file(file_path).set_arg(FileArgs.DISABLE_CHECKELF, True)
 
+    file_list.get_file('vendor/etc/vintf/manifest/manifest.xml').set_dst(
+        'vendor/etc/vintf/manifest/manifest_mapper_framework.xml'
+    )
+
     module_suffix_file_paths = [
         'vendor/lib/com.google.edgetpu_app_service-V3-ndk.so',
         'vendor/lib64/com.google.edgetpu_app_service-V3-ndk.so',
@@ -95,13 +99,6 @@ def fix_vendor_file_list(file_list: FileList):
 
     for file_path in module_suffix_file_paths:
         file_list.get_file(file_path).set_arg(FileArgs.MODULE_SUFFIX, '_vendor')
-
-    powerstats_service_file_path = (
-        'vendor/bin/hw/android.hardware.power.stats-service.pixel'
-    )
-    file_list.get_file(powerstats_service_file_path).set_arg(
-        FileArgs.REQUIRED, 'pixel_powerstats_xml'
-    )
 
 
 module.add_generated_proprietary_file(

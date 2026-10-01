@@ -14,9 +14,10 @@ VENDOR_PATH := vendor/google/panther
 $(call inherit-product, $(DEVICE_PATH)/aosp_$(DEVICE_CODENAME).mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_BRAND := google
-PRODUCT_MODEL := Pixel 7
 PRODUCT_NAME := bliss_$(DEVICE_CODENAME)
+PRODUCT_SYSTEM_BRAND := google
+PRODUCT_SYSTEM_MANUFACTURER := Google
+PRODUCT_SYSTEM_NAME := generic_system_google
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
@@ -27,8 +28,9 @@ TARGET_BOOT_ANIMATION_RES := $(TARGET_SCREEN_WIDTH)
 TARGET_GAPPS_VARIANT := micro
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="panther-user 16 BP4A.251205.006 14401865 release-keys" \
-    BuildFingerprint=google/panther/panther:16/BP4A.251205.006/14401865:user/release-keys \
+    BuildDesc="panther-user 17 CP2A.260705.006 15641320 release-keys" \
+    BuildFingerprint=google/panther/panther:17/CP2A.260705.006/15641320:user/release-keys \
+    BuildSystemFingerprint=google/generic_system_google/generic:17/CP2A.260705.006/15641320:user/release-keys \
     DeviceProduct=$(DEVICE_CODENAME)
 
 $(call inherit-product, $(VENDOR_PATH)/$(DEVICE_CODENAME)-vendor.mk)
